@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.heading{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.heading .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.heading .container .row .box i{
+    color: rgb(146, 146, 2);
+}
+.heading .container .row .box{
+    display: flex;
+    align-items: center;
+}
+.heading .container .row .box a{
+    text-decoration: none;
+    color: #000;
+}
+.heading .container .row .box p a{
+    letter-spacing: 0.5px;
+}
+/*  BTN đăng nhập đăng ký */
+.heading .container .row .box .button_sign a.register{
+    background: rgb(143, 3, 3);
+    color: #fff;
+    padding: 10px 5px;
+    display: inline-block;
+}
+.heading .container .row .box .button_sign a.login{
+    padding: 10px 5px;
+    display: inline-block;
+}
+/*  */
+.name__shop{
+    padding: 10px 0;
+}
+.name__shop .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.name__shop .container .row .box{
+    flex-basis: 33.333333%;
+    flex: 1;
+}
+.name__shop .container .row .box a{
+    text-decoration: none;
+    color: #000;
+}
+.name__shop .container .row .box h3{
+    letter-spacing: 1px;
+    font-style: oblique;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2em;
+    background: linear-gradient(to right,rgb(230, 14, 61),rgb(118, 189, 5));
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(230, 75, 14);
+}
+.name__shop .container .row .box .box__search {
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+.name__shop .container .row .box .box__search input{
+    flex-basis: 80%;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+.name__shop .container .row .box .box__search  button{
+    border: none;
+    outline: none;
+    flex-basis: 20%;
+    background: rgb(146, 146, 2);
+    height: 100%;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+}
+
+.name__shop .container .row .box .box__search  button:hover{
+    background: rgb(143, 3, 3);
+}
+/* cart */
+.name__shop .container .row .box:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.name__shop .container .row .box .cart{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.name__shop .container .row .box .cart a{
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    right: 0;
+}
+.name__shop .container .row .box .cart a span{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.name__shop .container .row .box .cart .list__items_cart{
+    position: absolute;
+    width: 100%;
+    top: calc(100% + 5px);
+    right: 0;
+    z-index: 999;
+    background: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.name__shop .container .row .box .cart .list__items_cart::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -5px;
+    background: #ddd;
+    right: 5px;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+.name__shop .container .row .box .cart:hover .list__items_cart{
+    animation: showCart 1s linear forwards;
+
+    display: block;
+}
+@keyframes showCart {
+    0%{
+        opacity: 0.5;
+    }
+    50%,100%{
+        opacity: 1;
+    }
+}
+.name__shop .container .row .box .cart .list__items_cart .item{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 5px;
+}
+.name__shop .container .row .box .cart .list__items_cart .item .image{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    flex-basis: 20%;
+    display: block;
+}
+.name__shop .container .row .box .cart .list__items_cart .item .image img{
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px;
+}
+.name__shop .container .row .box .cart .list__items_cart .item .name__product{
+    flex-basis: 50%;
+    padding: 5px;
+}
+.name__shop .container .row .box .cart .list__items_cart .item .name__product p:nth-child(1){
+    font-size: 0.8em;
+}
+.name__shop .container .row .box .cart .list__items_cart .item .quantily{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.name__shop .container .row .box .cart .list__items_cart .item .quantily input{
+    width: 50%;
+    text-align: center;
+}
+.name__shop .container .row .box .cart .list__items_cart .item .btn{
+    flex-basis: 5%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.name__shop .container .row .box .cart .list__items_cart .item .btn a{
+    text-decoration: none;
+    color: #ff0000;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-0%,-50%);
+}
+/* nagivation */
+section.nagivation{
+    background: rgba(0, 0, 0, 0.1);
+}
+section.nagivation.active{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    animation: sticky 1s linear forwards;
+}
+@keyframes sticky {
+    0%{
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        top: -100px;
+        background: #ddd;
+        padding: 10px 0;
+    }
+    50%,100%{
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        top: 0;
+        background: #ddd;
+        padding: 10px 0;
+    }
+}
+section.nagivation .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section.nagivation .container .box.menu{
+    flex-basis: 80%;
+}
+section.nagivation .container .box.menu nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+    list-style: none;
+    position: relative;
+}
+section.nagivation .container .box.menu nav ul li a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+}
+section.nagivation .container .box.menu nav ul li .nav__children{
+    position: absolute;
+    z-index: 100;
+    display: none;
+    width: 300px;
+    background: #ccc;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+section.nagivation .container .box.menu nav ul li .nav__children li {
+    display: block;
+    margin: 5px 0;
+}
+section.nagivation .container .box.menu nav ul li .nav__children li:hover{
+    background: #ddd;
+}
+section.nagivation .container .box.menu nav ul li a:hover{
+    text-decoration: underline;
+}
+section.nagivation .container .box.menu nav ul li:hover .nav__children{
+    display: block;
+}
+section.nagivation .container .box.social{
+    flex-basis: 20%;
+    height: 100%;
+}
+section.nagivation .container .box.social ul{
+    height: 100%;
+}
+section.nagivation .container .box.social ul li{
+    display: inline-block;
+    margin: 0 2px;
+    height: 100%;
+    color: #fff;
+    padding: 5px 10px;
+}
+section.nagivation .container .box.social ul li:nth-child(1){
+    background: rgb(2, 78, 129);
+}
+section.nagivation .container .box.social ul li:nth-child(1) a{
+    color: #fff;
+}
+
+section.nagivation .container .box.social ul li:nth-child(2){
+    background: rgb(5, 118, 194);
+}
+section.nagivation .container .box.social ul li:nth-child(2) a{
+    color: #fff;
+}
+
+section.nagivation .container .box.social ul li:nth-child(3){
+    background: rgb(161, 5, 57);
+}
+section.nagivation .container .box.social ul li:nth-child(3) a{
+    color: #fff;
+}
+/* slide */
+section.slide .slick_slide div{
+    position: relative;
+}
+section.slide .slick_slide div img{
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+}
+section.slide .slick_slide div .description{
+    position: absolute;
+    top: 50%;
+    width: 500px;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+section.slide .slick_slide div .description a{
+    text-decoration: none;
+    background: rgb(2, 78, 129);
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 5px;
+    padding: 5px;
+}
+section.slide .slick_slide div .description p{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 20px;
+}
+/* product */
+section.product {
+    padding: 30px  0;
+    border-top: 3px solid #ddd;
+}
+section.product .container .title__product{
+    margin: 0 0 30px 0;
+}
+section.product .container .title__product h3{
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+section.product .container .title__product h3 span{
+    color: red;
+}
+section.product .container .list__product {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+section.product .container .list__product .card{
+    flex-basis: calc(20% - 10px);
+    margin: 5px;
+}
+section.product .container .list__product .card{
+    position: relative;
+    transform-style: preserve-3d;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: 1s all;
+}
+section.product .container .list__product .card::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: -1px;
+    bottom: -1px;
+    background: linear-gradient(to bottom,#ff0000,#00bb4e);
+}
+section.product .container .list__product .card::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    right: -1px;
+    bottom: 1px;
+    background: linear-gradient(to top,#ff0000,#00bb4e);
+}
+section.product .container .list__product .card:hover{
+    transform: rotateY(180deg);
+}   
+section.product .container .list__product .card .box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    perspective: 1500px;
+    top: 0;
+    left: 0;
+    padding: 5px;
+}
+section.product .container .list__product .card .before.box {
+    background: #fff;
+}
+section.product .container .list__product .card .box .images{
+    height: 200px;
+    position: relative;
+    width: 100%;
+}
+section.product .container .list__product .card .box .images img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+section.product .container .list__product .card .box .contents{
+    margin: 10px 0 0 0;
+}
+section.product .container .list__product .card .box .contents a{
+    text-decoration: none;
+    color: #000;
+}
+section.product .container .list__product .card .box .contents a .title{
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #ff0000;
+    font-weight: 600;
+}
+section.product .container .list__product .card .box .contents a  span{
+    color: #ff0000;
+}
+section.product .container .list__product .card .box .contents a .info p{
+    margin: 5px 0;
+}
+section.product .container .list__product .card .before.box {
+    transform-style: preserve-3d;
+    perspective: 1500px;
+    transform: translateZ(50px);
+}
+section.product .container .list__product .card .before.box span.discout{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 3em;
+    height: 3em;
+    background: rgb(255,0,0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+}
+section.product .container .list__product .card .after.box{
+    background: linear-gradient(to bottom,rgb(240, 185, 185),rgb(67, 123, 155));
+}
+section.product .container .list__product .card .after.box {
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+section.product .container .list__product .card .after.box p{
+    transform: rotateY(180deg);
+}
+section.product .container .list__product .card .after.box .btn{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+section.product .container .list__product .card .after.box p.title{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+section.product .container .list__product .card .after.box .btn button.buy{
+    font-size: 1em;
+    padding: 10px 15px;
+    flex-basis: 45%;
+    background: rgb(5, 118, 194);
+    color: #fff;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+section.product .container .list__product .card .after.box .btn a.detail{
+    text-align: center;
+    font-size: 1em;
+    padding: 10px 15px;
+    flex-basis: 45%;
+    background: #e26e39;
+    color: #fff;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* contact */
+section.contact {
+    padding: 30px 0;
+    background: #ddd;
+}
+section.contact .container {
+    position: relative;
+    text-align: center;
+}
+section.contact .container .formContact{
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+section.contact .container .formContact form .input{
+    display: flex;
+    flex-wrap: wrap;
+}
+section.contact .container .formContact form .input .title{
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+}
+section.contact .container .formContact form .input .input_enter{
+    flex-basis: 70%;
+    text-align: left;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background: #fff;
+}
+section.contact .container .formContact form .input .input_enter input[type="text"]{
+    outline: none;
+    border: none;
+    background: none;
+    width: 80%;
+    float: left;
+    height: 100%;
+    padding: 5px 10px;
+}
+section.contact .container .formContact form .input .input_enter button{
+    outline: none;
+    border: none;
+    background: none;
+    width: 20%;
+    height: 100%;
+    border-left: 1px solid;
+    background: rgb(5, 118, 194);
+    color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+/* footer */
+.footer{
+    padding: 30px 0;
+    background: #ccc;
+}
+.footer .container .list_items{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer .container .list_items .item:nth-child(1) h3{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2em;
+    background: linear-gradient(to right,rgb(230, 14, 61),rgb(118, 189, 5));
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(230, 75, 14);
+    font-family: cursive;
+}
+
+.footer .container .list_items  .item a{
+    text-decoration: none;
+    color: #000;
+}
+.footer .container .list_items  .item ul {
+    list-style: none;
+}
+footer{
+    background: rgb(51, 50, 50);
+    padding: 10px 0;
+}
+footer .container p{
+    text-align: center;
+    color: #fff;
+    font-size: 0.8em;
+}
+/* ring phone */
+.rings__phone {
+    position: fixed;
+    bottom: 50px;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rings__phone .box__phone{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.rings__phone .box__phone.phone{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgb(5, 118, 194);
+    border-radius: 50%;
+    padding: 5px;
+    position: relative;
+}
+.rings__phone .box__phone.phone i{
+    font-size: 2em;
+    color: #fff;
+    animation: ringsphone 1s  infinite  ease-in-out;
+}
+
+.rings__phone .box__phone.b1{
+    background: rgb(5, 118, 194);
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    animation: circle-1-animation-phone 2s infinite ease-in-out;
+}
+.rings__phone .box__phone.b2{
+    background: rgb(31, 215, 240);
+    width: 250%;
+    height: 250%;
+    border-radius: 50%;
+    animation: circle-2-animation-phone 1s infinite ease-in-out;
+}
+@keyframes circle-1-animation-phone {
+    0% {
+        transform: rotate(0) scale(1) skew(1deg) scale(.7);
+        opacity: 0.7;
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg)  scale(.8);
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotate(25deg) scale(1) skew(1deg)  scale(.1);
+        opacity: 0.2;
+    }
+}
+@keyframes circle-2-animation-phone {
+    0% {
+        transform: rotate(0) scale(1) skew(1deg) scale(.7);
+        opacity: 0.7;
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg)  scale(.8);
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotate(25deg) scale(1) skew(1deg)  scale(1);
+        opacity: 0.2;
+    }
+}
+@keyframes ringsphone {
+    0% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+}
