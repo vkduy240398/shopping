@@ -106,7 +106,7 @@
     position: relative;
 }
 .name__shop .container .row .box .cart{
-    width: 100%;
+    width: 10%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -125,7 +125,7 @@
 .name__shop .container .row .box .cart .list__items_cart{
     position: absolute;
     width: 100%;
-    top: calc(100% + 5px);
+    top: 100%;
     right: 0;
     z-index: 999;
     background: #ddd;
@@ -400,9 +400,9 @@ section.product .container .list__product .card::after{
     bottom: 1px;
     background: linear-gradient(to top,#ff0000,#00bb4e);
 }
-section.product .container .list__product .card:hover{
+/* section.product .container .list__product .card:hover{
     transform: rotateY(180deg);
-}   
+}    */
 section.product .container .list__product .card .box{
     position: relative;
     width: 100%;
@@ -420,6 +420,11 @@ section.product .container .list__product .card .box .images{
     height: 200px;
     position: relative;
     width: 100%;
+}
+section.product .container .list__product .card .box .images a{
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 section.product .container .list__product .card .box .images img{
     position: absolute;

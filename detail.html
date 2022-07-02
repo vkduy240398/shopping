@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="shopping.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+    <section class="heading">
+        <div class="container">
+            <div class="row">
+                <div class="box">
+                    <p>Số điện thoại: <span> <i class="fas fa-phone"></i> <a href="tel:0982824398">0982.824.398</a></span></p>
+                </div>
+                <div class="box">
+                    <div class="button_sign">
+                        <a href="" class="register">Đăng ký</a>
+                        <a href="" class="login">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <section class="name__shop">
+        <div class="container">
+            <div class="row">
+                <div class="box">
+                    <a href=""><h3>SHOPPING</h3></a>
+                </div>
+                <div class="box">
+                    <div class="box__search">
+                        <input type="search" class="search__input" id="search__input" placeholder="Nhập từ khóa ...">
+                        <button id="search"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="box">
+                   <div class="cart">
+                        <a href="">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>0</span>
+                        </a>
+                        <div class="list__items_cart">
+                            <div class="item">
+                                 <div class="image">
+                                     <img src="gigabyte-gaming-g5-i5-5s11130sh-191021-102800-600x600.jpg" alt="">
+                                 </div>
+                                 <div class="name__product">
+                                     <p>Laptop Gaming Lorem ipsum dolor sit amet consectetur </p>
+                                     <p>300.000 đ</p>
+                                 </div>
+                                 <div class="quantily">
+                                     <i class="fas fa-minus"></i>
+                                     <input type="text" value="1" min="1">
+                                     <i class="fas fa-plus"></i>
+                                 </div>
+                                 <div class="btn">
+                                     <a href="javascript:void(0)"><i class="fas fa-trash-alt"></i></a>
+                                 </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="iphone-13-pro-max-silver-600x600.jpg" alt="">
+                                </div>
+                                <div class="name__product">
+                                    <p>Laptop Gaming Lorem ipsum dolor sit amet consectetur </p>
+                                    <p>300.000 đ</p>
+                                </div>
+                                <div class="quantily">
+                                    <i class="fas fa-minus"></i>
+                                    <input type="text" value="1" min="1">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="btn">
+                                    <a href="javascript:void(0)"><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                           </div>
+                         </div>
+                   </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- nagivation  -->
+    <section class="nagivation">
+        <div class="container">
+            <div class="box menu">
+                <nav>
+                    <ul>
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Hướng dẫn mua hàng</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="">Sản phảm</a>
+                            <ul class="nav__children">
+                                <li><a href="">Iphone</a></li>
+                                <li><a href="">Sam Sung</a></li>
+                                <li><a href="">Oppo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="box social">
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- sản phẩm -->
+   <section class="detail__product">
+        <div class="container">
+            <div class="block__product">
+                <div class="left">
+                   <h3>SAMSUNG GALAXY A7s</h3>
+                    <div class="price">
+                        <p>20,000,000 vnđ</p>
+                        <p><s>23,000,000 vnđ</s></p>
+                    </div>
+                   <div class="block__product_detail">
+                        <div class="block">
+                            <div class="image__box">
+                                <img src="617ec2b666bba-x3WzhCVQKYei4od1NDSyJwk6P5OlG8E90bXqMgnsDurBATULc72mjfZRvtHFa.png" alt="">
+                            </div>
+                            <div class="list_images">
+                                <div>
+                                    <img src="617ec2b666bba-x3WzhCVQKYei4od1NDSyJwk6P5OlG8E90bXqMgnsDurBATULc72mjfZRvtHFa.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="6190ab54e3a0a-dYJerKRODEi82m3j1NwPXTstalhxkAVbfocFCg5QyqGH7uD4LB90zMS6UnvZW.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="625c0e76f13ef-zmRDMdZAbqxwe9v4NX5loh3GarkW1ci62BJUngjTL8u0sVFSHYyfQDPCE7OtK.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="gigabyte-gaming-g5-i5-5s11130sh-191021-102800-600x600.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="617ec2b666bba-x3WzhCVQKYei4od1NDSyJwk6P5OlG8E90bXqMgnsDurBATULc72mjfZRvtHFa.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="617ec2b666bba-x3WzhCVQKYei4od1NDSyJwk6P5OlG8E90bXqMgnsDurBATULc72mjfZRvtHFa.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="625c0fd4646d3-4mqW5fKDX2cskSDLxgeVAwZBt3MnUyC8Oio0QEPY1NGraTluFH769bzRJhdjv.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="617ec2b666bba-x3WzhCVQKYei4od1NDSyJwk6P5OlG8E90bXqMgnsDurBATULc72mjfZRvtHFa.png" alt="">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="button__buy">
+                            <div class="button"><button>Thêm vào giỏ hàng</button></div>
+                            <div class="quantily">
+                                <div class="minus"><i class="fa-solid fa-minus"></i></div>
+                                    <input type="text" value="1" id="qty__product" name="data_post[qty]">
+                                <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="right">
+                    <h3>Cấu hình điện thoại SAMSUNG GALAXY A7s</h3>
+                    <div class="parameter">
+                        <div>
+                            <strong>Màn hình:</strong>
+                            <p>13 inch</p>
+                        </div> 
+                        <div class="second">
+                            <strong>RAM:</strong>
+                            <p>8 GB</p>
+                        </div> 
+                        <div>
+                            <strong>Ổ cứng:</strong>
+                            <p>256 GB SSD</p>
+                        </div> 
+                        <div class="second">
+                            <strong>Camera trước:</strong>
+                            <p>16MP</p>
+                        </div> 
+                        <div>
+                            <strong>Camera sau:</strong>
+                            <p>32MP</p>
+                        </div> 
+                        <div class="second">
+                            <strong>Hãng:</strong>
+                            <p>Samsung</p>
+                        </div> 
+                        <div>
+                            <strong>SIM:</strong>
+                            <p>2 sim</p>
+                        </div> 
+                        <div class="second">
+                            <strong>Pin:</strong>
+                            <p>5000mAh, 18w</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="contents__product">
+                Vivo Y21 chiếc smartphone mang trong mình nhiều ưu điểm nổi bật như màn hình viền mỏng đẹp mắt, hiệu năng ổn định cùng dung lượng pin tận 5000 mAh chắc chắn sẽ đáp ứng nhu cầu sử dụng của bạn cả ngày dài.
+                Ngoại hình nổi bật với thiết kế siêu mỏng
+                máy có một thiết kế nguyên khối tạo cảm giác bền bỉ, chắc chắn. Vivo Y21 còn mang đến trải nghiệm cầm nắm thoải mái với thân máy mỏng chỉ 8 mm và có các cạnh viền bo tròn mịn màng giúp cho mọi thao tác sử dụng trở nên hoàn hảo.
+            </div>
+            <div class="product__same">
+                <h3>Sản phẩm liên quan</h3>
+                <div class="list__product">
+                    <div class="card">
+                        <div class="before box">
+                            <div class="images">
+                                <a href="#"><img src="iphone-13-pro-max-silver-600x600.jpg" alt=""></a>
+                            </div>
+                            <div class="contents">
+                                <a href="">
+                                    <p class="title">Iphone X 65GB</p>
+                                    <p class="price">
+                                        <s>200.000 đ</s>
+                                        <span>180.000 đ</span>
+                                    </p>
+                                    <div class="info">
+                                        <p><strong>RAM:</strong> 64GB</p>
+                                        <p><strong>Camera:</strong> trước 16 MP , Sau 32MP</p>
+                                        <p><strong>SIM:</strong>Hổ trợ NANO SIM</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="discout">10%</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="before box">
+                            <div class="images">
+                                <a href="#"><img src="iphone-13-pro-max-silver-600x600.jpg" alt=""></a>
+                            </div>
+                            <div class="contents">
+                                <a href="">
+                                    <p class="title">Iphone X 65GB</p>
+                                    <p class="price">
+                                        <s>200.000 đ</s>
+                                        <span>180.000 đ</span>
+                                    </p>
+                                    <div class="info">
+                                        <p><strong>RAM:</strong> 64GB</p>
+                                        <p><strong>Camera:</strong> trước 16 MP , Sau 32MP</p>
+                                        <p><strong>SIM:</strong>Hổ trợ NANO SIM</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="discout">10%</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="before box">
+                            <div class="images">
+                                <a href="#"><img src="iphone-13-pro-max-silver-600x600.jpg" alt=""></a>
+                            </div>
+                            <div class="contents">
+                                <a href="">
+                                    <p class="title">Iphone X 65GB</p>
+                                    <p class="price">
+                                        <s>200.000 đ</s>
+                                        <span>180.000 đ</span>
+                                    </p>
+                                    <div class="info">
+                                        <p><strong>RAM:</strong> 64GB</p>
+                                        <p><strong>Camera:</strong> trước 16 MP , Sau 32MP</p>
+                                        <p><strong>SIM:</strong>Hổ trợ NANO SIM</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="discout">10%</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="before box">
+                            <div class="images">
+                                <a href="#"><img src="iphone-13-pro-max-silver-600x600.jpg" alt=""></a>
+                            </div>
+                            <div class="contents">
+                                <a href="">
+                                    <p class="title">Iphone X 65GB</p>
+                                    <p class="price">
+                                        <s>200.000 đ</s>
+                                        <span>180.000 đ</span>
+                                    </p>
+                                    <div class="info">
+                                        <p><strong>RAM:</strong> 64GB</p>
+                                        <p><strong>Camera:</strong> trước 16 MP , Sau 32MP</p>
+                                        <p><strong>SIM:</strong>Hổ trợ NANO SIM</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="discout">10%</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="before box">
+                            <div class="images">
+                                <a href="#"><img src="iphone-13-pro-max-silver-600x600.jpg" alt=""></a>
+                            </div>
+                            <div class="contents">
+                                <a href="">
+                                    <p class="title">Iphone X 65GB</p>
+                                    <p class="price">
+                                        <s>200.000 đ</s>
+                                        <span>180.000 đ</span>
+                                    </p>
+                                    <div class="info">
+                                        <p><strong>RAM:</strong> 64GB</p>
+                                        <p><strong>Camera:</strong> trước 16 MP , Sau 32MP</p>
+                                        <p><strong>SIM:</strong>Hổ trợ NANO SIM</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="discout">10%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!-- footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="list_items">
+                <div class="item">
+                    <h3>SHOPPING</h3>
+                    <div class="info__company">
+                        <p><strong>Website:</strong><a href="http://khanhduydemo1998.com/">khanhduydemo1998.com</a></p>
+                        <p><strong>Địa chỉ:</strong>TPCT</p>
+                        <p><strong>Số điện thoại:</strong><a href="tel:0982824398">0982.824.398</a></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Danh mục sản phẩm</h3>
+                    <ul>
+                        <li><a href="">Iphone</a></li>
+                        <li><a href="">SamSung</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>Chính sách</h3>
+                    <ul>
+                        <li><a href="">Chính sách mua hàng</a></li>
+                        <li><a href="">Chính sách đổi trả</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>Bài viết</h3>
+                    <ul>
+                        <li><a href="">Công nghệ</a></li>
+                        <li><a href="">Kỹ thuật</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>@Design by Vo Khanh Duy , Year 2022</p>
+        </div>
+    </footer>
+    <div class="rings__phone">
+        <div class="b1 box__phone"></div>
+        <div class="b2 box__phone"></div>
+        <div class="box__phone phone">
+            <a href="tel:0982824398" title="0982824398"><i class="fas fa-phone-alt"></i></a>
+        </div>
+    </div>
+<div class="overlay"></div>
+<div class="views_list_product">
+    <button id="closeModal">Đóng</button>
+    <div class="images__box">
+        <img src="617ec2b666bba-x3WzhCVQKYei4od1NDSyJwk6P5OlG8E90bXqMgnsDurBATULc72mjfZRvtHFa.png" id="preview__images" alt="">
+    </div>
+    <div class="list__image">
+        <div class="box">
+            <img src="617ec2b666bba-x3WzhCVQKYei4od1NDSyJwk6P5OlG8E90bXqMgnsDurBATULc72mjfZRvtHFa.png" alt="">
+        </div>
+        <div class="box">
+            <img src="6190ab54e3a0a-dYJerKRODEi82m3j1NwPXTstalhxkAVbfocFCg5QyqGH7uD4LB90zMS6UnvZW.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="625c0e76f13ef-zmRDMdZAbqxwe9v4NX5loh3GarkW1ci62BJUngjTL8u0sVFSHYyfQDPCE7OtK.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="625c0fd4646d3-4mqW5fKDX2cskSDLxgeVAwZBt3MnUyC8Oio0QEPY1NGraTluFH769bzRJhdjv.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="625c0fd4646d3-4mqW5fKDX2cskSDLxgeVAwZBt3MnUyC8Oio0QEPY1NGraTluFH769bzRJhdjv.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="gigabyte-gaming-g5-i5-5s11130sh-191021-102800-600x600.jpg" alt="">
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $('.slick_slide').slick({
+        arrows: false,
+        fade: true,
+        centerMode: true,
+        focusOnSelect: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+    window.addEventListener('scroll',(e)=>{
+        if (document.documentElement.scrollTop > 120) {
+            document.querySelector('.nagivation').classList.add('active');
+        }
+        else{
+            document.querySelector('.nagivation').classList.remove('active');
+        }
+    });
+    // Click +,- qty product
+    const plus = document.querySelector('.plus');
+    const minus = document.querySelector('.minus');
+    const input = document.querySelector('#qty__product');
+    plus.addEventListener('click',(e) => {
+        input.value = Number(input.value) + 1
+    });
+    minus.addEventListener('click',(e) => {
+        if(Number(input.value) <= 0)
+        return input.value = 0;
+        input.value = Number(input.value) - 1
+    });
+    // list images
+    const preview__images = document.querySelector('#preview__images');
+    const list__boxs = document.querySelectorAll('.box');
+    const list = document.querySelector('.list_images').children;
+    Array.from(list).forEach((v) => {
+        v.addEventListener('click',(e) => {
+            document.querySelector('.overlay').style.display = "unset";
+            document.querySelector('.views_list_product').style.display = "unset";
+            const images = e.target.getAttribute('src');
+            preview__images.setAttribute('src',images);
+           
+        })
+    });
+   
+    list__boxs.forEach((v,k) => {
+        v.addEventListener('click',(e) => {
+            const images = e.target.getAttribute('src');
+            preview__images.setAttribute('src',images);
+        });
+    });
+    document.querySelector('#closeModal').addEventListener('click',() => {
+        document.querySelector('.overlay').style.display = "none";
+        document.querySelector('.views_list_product').style.display = "none";
+    });
+</script>
+</body>
+</html>
